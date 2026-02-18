@@ -34,7 +34,7 @@ export function createMenu() {
     mainRow.appendChild(itemTh);
     mainRow.appendChild(priceTh);
 
-    menuItems.forEach({item, price}, () => {
+    menuItems.forEach(({item, price}) => {
         let tr = document.createElement("tr");
         let th = document.createElement("th");
         let td = document.createElement("td");
