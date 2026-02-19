@@ -33,6 +33,7 @@ export function createMenu() {
     priceTh.setAttribute("scope", "col");
     mainRow.appendChild(itemTh);
     mainRow.appendChild(priceTh);
+    thead.appendChild(mainRow);
 
     menuItems.forEach(({item, price}) => {
         let tr = document.createElement("tr");
@@ -41,7 +42,7 @@ export function createMenu() {
 
         th.setAttribute("scope", "row");
         th.textContent = item;
-        td.textContent = price;
+        td.textContent = (price).toFixed(2);
 
         tr.appendChild(th);
         tr.appendChild(td);

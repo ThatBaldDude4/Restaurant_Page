@@ -1,4 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 1px solid yellow;
+}
+
 body {
     background-color: black;
-    color: orangered;
+    color: red;
+}
+
+#nav-header {
+    width: 100%;
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nav-bar {
+    appearance: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-btn {
+    font-size: large;
+}
+
+/* HOME page css starts here */
+
+#home-page-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#home-page-img {
+    min-height: 100px;
+    min-width: 100px;
+    margin: 20px;
 }
