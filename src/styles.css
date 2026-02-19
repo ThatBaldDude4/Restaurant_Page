@@ -1,3 +1,8 @@
+:root {
+    --header-color: red;
+    --text-color: white;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,10 +41,18 @@ body {
 #home-page-container {
     text-align: center;
     margin-top: 20px;
+    color: var(--header-color);
 }
 
 #home-page-img {
     min-height: 100px;
     min-width: 100px;
     margin: 20px;
+}
+
+#home-page-description {
+    color: var(--text-color);
+    padding: 0 100px 0 100px;
+    text-align: left;
+    margin-top: 20px;
 }
