@@ -26,11 +26,13 @@ export function createMenu() {
     const mainRow = document.createElement("tr");
     const itemTh = document.createElement("th");
     const priceTh = document.createElement("th");
-
+    
+    container.setAttribute("id", "menu-container");
     itemTh.textContent = "Item";
     itemTh.setAttribute("scope", "col");
     priceTh.textContent = "Price";
     priceTh.setAttribute("scope", "col");
+    mainRow.classList.add("table-headers");
     mainRow.appendChild(itemTh);
     mainRow.appendChild(priceTh);
     thead.appendChild(mainRow);
@@ -41,8 +43,10 @@ export function createMenu() {
         let td = document.createElement("td");
 
         th.setAttribute("scope", "row");
+        th.classList.add("row-data");
         th.textContent = item;
-        td.textContent = (price).toFixed(2);
+        td.classList.add("row-data");
+        td.textContent = `$${(price).toFixed(2)}`;
 
         tr.appendChild(th);
         tr.appendChild(td);

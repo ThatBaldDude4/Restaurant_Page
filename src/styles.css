@@ -7,12 +7,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid yellow;
 }
 
 body {
     background-color: black;
     color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #nav-header {
@@ -38,10 +40,21 @@ body {
 
 /* HOME page css starts here */
 
+#content {
+    max-width: 900px;
+    margin-top: 100px;
+    border: 2px solid yellow;
+}
+
 #home-page-container {
     text-align: center;
     margin-top: 20px;
     color: var(--header-color);
+}
+
+#home-page-title {
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 #home-page-img {
@@ -52,7 +65,25 @@ body {
 
 #home-page-description {
     color: var(--text-color);
-    padding: 0 100px 0 100px;
+    padding: 20px 100px 20px 100px;
     text-align: left;
     margin-top: 20px;
+}
+
+/* MENU page starts here */
+
+#menu-container {
+    max-width: 500px;
+    text-align: center;
+}
+
+.table-headers {
+    font-size: 80px;
+    padding: 0 20px 0 20px;
+}
+
+.row-data {
+    font-size: 40px;
+    padding: 5px 20px 204px 20px;
+    color: var(--text-color);
 }
